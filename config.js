@@ -4,7 +4,7 @@ window.RDS_CONFIG = {
   slogan: "parque residencial",
   ciudad: "Localidad de Suba · Bogotá D.C.",
   direccion: "POR CONFIRMAR",
-  manualConvivenciaUrl:manualConvivenciaUrl: "https://drive.google.com/file/d/1QlPXDbUoxC2QC2OMv0yngdZpGsMS1_1W/view?usp=sharing",
+  manualConvivenciaUrl: "https://drive.google.com/file/d/1QlPXDbUoxC2QC2OMv0yngdZpGsMS1_1W/view?usp=sharing",
 
   administracion: {
     nombre: "Administración Reserva de Suba",
