@@ -1,0 +1,122 @@
+:root {
+  --wine: #6b2342;
+  --wine-deep: #4a1530;
+  --wine-soft: #8d3a58;
+  --rose: #c4a4b0;
+  --sand: #f4eee9;
+  --paper: #fbf8f6;
+  --line: #e4d6d9;
+  --ink: #2a181f;
+  --mute: #6f5b62;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Outfit, system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+.wrap { width: min(1040px, calc(100% - 32px)); margin-inline: auto; }
+
+.top {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(251,248,246,.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.top-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 0; }
+.brand img { height: 52px; width: auto; display: block; }
+.nav { display: flex; gap: 18px; align-items: center; font-size: 14px; }
+.nav a { color: var(--mute); text-decoration: none; }
+.nav-manual { color: var(--wine) !important; font-weight: 600; }
+
+.hero { padding: 36px 0 20px; }
+.hero-grid { display: grid; grid-template-columns: 1.3fr .8fr; gap: 28px; align-items: center; }
+.eyebrow { letter-spacing: .18em; text-transform: uppercase; font-size: 11px; color: var(--wine-soft); margin: 0 0 8px; }
+h1, h2 { font-family: "Cormorant Garamond", Georgia, serif; margin: 0 0 10px; }
+h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); color: var(--wine-deep); font-weight: 600; line-height: .95; }
+h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--wine-deep); }
+.lead { color: var(--mute); font-size: 1.05rem; max-width: 38ch; }
+.hero-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12px 18px; border-radius: 999px; text-decoration: none;
+  font-weight: 600; font-size: 14px; border: 1px solid transparent;
+}
+.btn-sos { background: var(--wine); color: #fff; }
+.btn-ghost { background: #fff; color: var(--wine); border-color: var(--line); }
+.btn-light { background: #fff; color: var(--wine-deep); }
+.btn-call {
+  background: var(--wine); color: #fff; padding: 8px 12px; font-size: 13px;
+}
+
+.hero-card {
+  background: var(--wine-deep); color: #f7ecef;
+  padding: 22px; border-radius: 18px;
+}
+.hero-card .kicker { opacity: .7; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 6px; }
+.hero-card strong { display: block; font-size: 1.6rem; margin-bottom: 8px; }
+.hero-card p { margin: 0; color: #e8cfd6; font-size: 14px; }
+
+.search-wrap { padding: 8px 0 6px; }
+.search span { display: block; font-size: 12px; color: var(--mute); margin-bottom: 6px; }
+.search input {
+  width: 100%; border: 1px solid var(--line); background: #fff;
+  border-radius: 12px; padding: 12px 14px; font: inherit;
+}
+
+.section-label { letter-spacing: .16em; text-transform: uppercase; font-size: 11px; color: var(--wine-soft); margin: 28px 0 4px; }
+.hint { color: var(--mute); margin: 0 0 16px; }
+.list { display: flex; flex-direction: column; gap: 10px; padding-bottom: 20px; }
+
+.item {
+  background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+}
+.item[hidden] { display: none; }
+.item-btn {
+  width: 100%; text-align: left; background: none; border: 0;
+  padding: 16px 18px; display: flex; gap: 12px; align-items: center; cursor: pointer; font: inherit;
+}
+.ico {
+  width: 42px; height: 42px; border-radius: 12px; background: var(--sand);
+  color: var(--wine); display: grid; place-items: center; font-size: 18px; flex: none;
+}
+.item-btn strong { display: block; }
+.item-btn small { color: var(--mute); }
+.chev { margin-left: auto; color: var(--rose); transition: transform .2s; }
+.item.open .chev { transform: rotate(180deg); }
+.panel { display: none; padding: 0 18px 16px 72px; color: var(--mute); }
+.item.open .panel { display: block; }
+.rows { margin: 10px 0 0; padding: 0; list-style: none; }
+.rows li {
+  display: flex; justify-content: space-between; gap: 12px; align-items: center;
+  padding: 8px 0; border-top: 1px solid var(--sand); font-size: 14px;
+}
+.rows b { color: var(--ink); font-weight: 500; }
+.note { font-size: 13px; margin: 8px 0 0; }
+
+.bloque { padding-bottom: 28px; }
+.cards-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+.card h3 { margin: 0 0 8px; font-size: 1.15rem; color: var(--wine-deep); }
+.card p { margin: 6px 0; color: var(--mute); font-size: 14px; }
+
+.manual { background: var(--wine); color: #f8eef1; margin-top: 12px; }
+.manual-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 36px 0; }
+.eyebrow.light { color: var(--rose); }
+.manual h2 { color: #fff; }
+.manual p { color: #ead3da; max-width: 46ch; }
+
+.foot { padding: 28px 0 40px; text-align: center; color: var(--mute); }
+.foot img { height: 44px; margin-bottom: 8px; }
+.mini { font-size: 12px; }
+
+@media (max-width: 800px) {
+  .hero-grid, .cards-2, .manual-inner { grid-template-columns: 1fr; display: grid; }
+  .nav { display: none; }
+  .panel { padding-left: 18px; }
+  .brand img { height: 44px; }
+}

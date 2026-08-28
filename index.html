@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directorio · Reserva de Suba</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#inicio">
+        <img src="logo.png" alt="Reserva de Suba parque residencial" />
+      </a>
+      <nav class="nav">
+        <a href="#directorio">Directorio</a>
+        <a href="#conjunto">El conjunto</a>
+        <a class="nav-manual" href="#manual">Manual de convivencia</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Directorio del conjunto</p>
+        <h1>Reserva de Suba</h1>
+        <p class="lead">Teléfonos de emergencia, autoridades de Bogotá y contactos internos. Toque una tarjeta para ver números, horarios y qué hacer.</p>
+        <div class="hero-actions">
+          <a class="btn btn-sos" href="tel:123">Emergencia 123</a>
+          <a class="btn btn-ghost" href="#manual">Manual de convivencia</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <p class="kicker">En una emergencia</p>
+        <strong>Llame al 123</strong>
+        <p>Policía, bomberos, ambulancia, maltrato animal en flagrancia y violencia en curso. Diga: Reserva de Suba, localidad de Suba, y la torre o el apartamento.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="wrap search-wrap">
+    <label class="search">
+      <span>Buscar en el directorio</span>
+      <input id="q" type="search" placeholder="Ej. gas, portería, animal, policía…" autocomplete="off" />
+    </label>
+  </section>
+
+  <main class="wrap" id="directorio">
+    <p class="section-label">Directorio</p>
+    <h2>Servicios y contactos</h2>
+    <p class="hint">Los números de ciudad son oficiales. Los del conjunto aparecen como <em>por confirmar</em> hasta que nos pase los definitivos.</p>
+    <div id="list" class="list"></div>
+  </main>
+
+  <section class="wrap bloque" id="conjunto">
+    <p class="section-label">Uso interno</p>
+    <h2>Administración y portería</h2>
+    <div class="cards-2" id="interno"></div>
+  </section>
+
+  <section class="manual" id="manual">
+    <div class="wrap manual-inner">
+      <div>
+        <p class="eyebrow light">Normas del conjunto</p>
+        <h2>Manual de convivencia</h2>
+        <p>Reglamento de propiedad horizontal, horarios, mascotas, parqueaderos y uso de zonas comunes.</p>
+      </div>
+      <a class="btn btn-light" id="manualBtn" href="#manual" target="_blank" rel="noopener">Abrir el manual</a>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <img src="logo.png" alt="" />
+      <p>Reserva de Suba · parque residencial · Localidad de Suba, Bogotá D.C.</p>
+      <p class="mini">Borrador de directorio. Verifique números locales del conjunto antes de imprimir el QR.</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
