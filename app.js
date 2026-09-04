@@ -6,7 +6,7 @@
       id: "admin",
       ico: "🏢",
       titulo: "Administración del conjunto",
-      resumen: "Quejas, correspondencia, consejo",
+      resumen: "PQRS",
       tags: "administracion conjunto consejo queja correo telefono whatsapp",
       nota: "Atención presencial o por teléfono en el horario indicado.",
       filas: [
@@ -21,7 +21,7 @@
       titulo: "Portería y control",
       resumen: "Ingreso, domiciliarios, minuta",
       tags: "porteria vigilancia ingreso visita paquete telefono whatsapp",
-      nota: "Ante riña o hurto en portería, avise a vigilancia y marque 123.",
+      nota: "Ante riña o hurto, avise a vigilancia y marque 123.",
       filas: [
         { etiqueta: "Teléfono y WhatsApp", valor: cfg.porteria?.principal || "3123116210", tel: cfg.porteria?.principal || "3123116210" },
         { etiqueta: "Horario", valor: cfg.porteria?.horario || "24 horas", tel: null }
@@ -31,9 +31,9 @@
       id: "emergencias",
       ico: "🚨",
       titulo: "Emergencias Bogotá",
-      resumen: "Un solo número para Policía, Bomberos y ambulancia",
+      resumen: "Policía, Bomberos y ambulancia",
       tags: "123 emergencia hurto riña incendio accidente",
-      nota: "Desde cualquier celular. Diga el conjunto, la torre y el apartamento.",
+      nota: "Desde cualquier celular. Diga el nombre del conjunto, la torre y el apartamento.",
       filas: [
         { etiqueta: "Línea única de emergencias", valor: "123", tel: "123" },
         { etiqueta: "Policía (línea directa)", valor: "112", tel: "112" },
@@ -48,7 +48,7 @@
       titulo: "Policía y seguridad",
       resumen: "Hurto, riña, sospechosos, GAULA",
       tags: "policia cai hurto seguridad gaula fiscalia",
-      nota: "Si está ocurriendo ahora, marque 123. El CAI de la zona se confirma con administración.",
+      nota: "Si está ocurriendo ahora, marque 123 o al CAI mas cercano",
       filas: [
         { etiqueta: "Emergencia", valor: "123", tel: "123" },
         { etiqueta: "GAULA (extorsión / secuestro)", valor: "165", tel: "165" },
@@ -73,7 +73,7 @@
       id: "salud",
       ico: "🏥",
       titulo: "Salud y urgencias",
-      resumen: "Ambulancia, envenenamiento, hospital de referencia",
+      resumen: "Ambulancia, envenenamiento, accidente, hospital de referencia",
       tags: "salud ambulancia hospital suba medico veneno",
       nota: "Hospital de Suba es la referencia de la localidad. En urgencia vital use 123.",
       filas: [
@@ -87,7 +87,7 @@
       titulo: "Protección animal",
       resumen: "Maltrato, abandono o animal herido",
       tags: "animal mascota perro gato maltrato idpyba",
-      nota: "Si el animal está en riesgo vital o el maltrato es en este momento, 123. El correo del IDPYBA es para reportar y hacer seguimiento.",
+      nota: "Si el animal está en riesgo vital o el maltrato es en este momento, 123. El correo del IDPYBA es solo para reportar y hacer seguimiento.",
       filas: [
         { etiqueta: "Flagrancia o urgencia vital", valor: "123", tel: "123" },
         { etiqueta: "Correo IDPYBA", valor: "proteccionanimal@animalesbog.gov.co", tel: null }
@@ -116,7 +116,7 @@
       nota: "Fuga de gas: no encienda luces, abra ventanas, salga y marque Bomberos / 123 y la línea del gas.",
       filas: [
         { etiqueta: "Gas (Vanti / emergencia)", valor: "164", tel: "164" },
-        { etiqueta: "Energía (Enel)", valor: "115", tel: "115" },
+        { etiqueta: "Energía (Enel / emergencia )", valor: "115", tel: "115" },
         { etiqueta: "Acueducto y alcantarillado (EAAB)", valor: "116", tel: "116" }
       ]
     },
