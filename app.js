@@ -198,7 +198,7 @@
     <article class="card">
       <h3>Portería</h3>
       <p>Horario: ${cfg.porteria?.horario || "24 horas"}</p>
-      <p>Telefono: ${cfg.porteria?.principal || "3123116210"}</p>
+      <p>Teléfono: ${cfg.porteria?.principal || "3123116210"}</p>
       <p>Dirección del conjunto: ${cfg.direccion || "Carrera 145 #150-64 · Localidad de Suba"}</p>
     </article>`;
 
