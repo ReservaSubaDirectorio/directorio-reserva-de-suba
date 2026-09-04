@@ -3,6 +3,31 @@
 
   const DIR = [
     {
+      id: "admin",
+      ico: "🏢",
+      titulo: "Administración del conjunto",
+      resumen: "Quejas, correspondencia, consejo",
+      tags: "administracion conjunto consejo queja correo telefono whatsapp",
+      nota: "Atención presencial o por teléfono en el horario indicado.",
+      filas: [
+        { etiqueta: "Correo", valor: cfg.administracion?.email || "reservadesubaque@outlook.com", tel: null },
+        { etiqueta: "Teléfono y WhatsApp", valor: cfg.administracion?.telefono || "3194090958", tel: cfg.administracion?.telefono || "3194090958" },
+        { etiqueta: "Horarios de atención presencial o por teléfono", valor: cfg.administracion?.horario || "Lunes a viernes, 8:00 a.m. a 5:00 p.m.", tel: null }
+      ]
+    },
+    {
+      id: "porteria",
+      ico: "🚪",
+      titulo: "Portería y control",
+      resumen: "Ingreso, domiciliarios, minuta",
+      tags: "porteria vigilancia ingreso visita paquete telefono whatsapp",
+      nota: "Ante riña o hurto en portería, avise a vigilancia y marque 123.",
+      filas: [
+        { etiqueta: "Teléfono y WhatsApp", valor: cfg.porteria?.principal || "3123116210", tel: cfg.porteria?.principal || "3123116210" },
+        { etiqueta: "Horario", valor: cfg.porteria?.horario || "24 horas", tel: null }
+      ]
+    },
+    {
       id: "emergencias",
       ico: "🚨",
       titulo: "Emergencias Bogotá",
@@ -107,32 +132,6 @@
         { etiqueta: "Teléfonos", valor: "(601) 382 0660", tel: "6013820660" },
         { etiqueta: "Línea Distrito", valor: "195", tel: "195" },
         { etiqueta: "Horario", valor: "Lun a vie 7:00 a.m. a 4:30 p.m.", tel: null }
-      ]
-    },
-    {
-      id: "admin",
-      ico: "🏢",
-      titulo: "Administración del conjunto",
-      resumen: "Quejas, correspondencia, consejo",
-      tags: "administracion conjunto consejo queja correo",
-      nota: "Complete estos datos cuando tenga el teléfono y el WhatsApp definitivos.",
-      filas: [
-        { etiqueta: "Correo", valor: cfg.administracion?.email || "reservadesubaque@outlook.com", tel: null },
-        { etiqueta: "Teléfono", valor: cfg.administracion?.telefono || "3194090958", tel: cfg.administracion?.telefono || "3194090958" },
-        { etiqueta: "WhatsApp", valor: cfg.administracion?.whatsapp || "3194090958", tel: cfg.administracion?.whatsapp || "3194090958" },
-        { etiqueta: "Horarios de atención presencial o por teléfono", valor: cfg.administracion?.horario || "Lunes a viernes, 8:00 a.m. a 5:00 p.m.", tel: null }
-      ]
-    },
-    {
-      id: "porteria",
-      ico: "🚪",
-      titulo: "Portería y control",
-      resumen: "Ingreso, domiciliarios, minuta",
-      tags: "porteria vigilancia ingreso visita paquete",
-      nota: "Ante riña o hurto en portería, avise a vigilancia y marque 123.",
-      filas: [
-        { etiqueta: "Portería principal", valor: cfg.porteria?.principal || "3123116210", tel: cfg.porteria?.principal || "3123116210" },
-        { etiqueta: "Horario", valor: cfg.porteria?.horario || "24 horas", tel: null }
       ]
     }
   ];
