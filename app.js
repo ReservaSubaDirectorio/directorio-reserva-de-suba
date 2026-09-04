@@ -28,7 +28,7 @@
         { etiqueta: "Emergencia", valor: "123", tel: "123" },
         { etiqueta: "GAULA (extorsión / secuestro)", valor: "165", tel: "165" },
         { etiqueta: "Fiscalía", valor: "122", tel: "122" },
-        { etiqueta: "CAI más cercano", valor: "POR CONFIRMAR", tel: null }
+        { etiqueta: "CAI más cercano", valor: "3008051435", tel: "3008051435" }
       ]
     },
     {
@@ -53,8 +53,7 @@
       nota: "Hospital de Suba es la referencia de la localidad. En urgencia vital use 123.",
       filas: [
         { etiqueta: "Ambulancia", valor: "123 / 125", tel: "123" },
-        { etiqueta: "Cruz Roja", valor: "132", tel: "132" },
-        { etiqueta: "Hospital de Suba (referencia)", valor: "Localidad de Suba", tel: null }
+        { etiqueta: "Cruz Roja", valor: "132", tel: "132" }
       ]
     },
     {
@@ -66,7 +65,6 @@
       nota: "Si el animal está en riesgo vital o el maltrato es en este momento, 123. La línea del IDPYBA es para reportar y hacer seguimiento.",
       filas: [
         { etiqueta: "Flagrancia o urgencia vital", valor: "123", tel: "123" },
-        { etiqueta: "IDPYBA — maltrato animal", valor: "(601) 439 9801", tel: "6014399801" },
         { etiqueta: "Correo IDPYBA", valor: "proteccionanimal@animalesbog.gov.co", tel: null }
       ]
     },
@@ -80,7 +78,6 @@
       filas: [
         { etiqueta: "Peligro inminente", valor: "123", tel: "123" },
         { etiqueta: "Línea Púrpura Bogotá", valor: "01 8000 112 137", tel: "018000112137" },
-        { etiqueta: "WhatsApp Púrpura", valor: "300 755 1846", tel: "3007551846" },
         { etiqueta: "Línea nacional 155", valor: "155", tel: "155" },
         { etiqueta: "ICBF (niñez)", valor: "141", tel: "141" }
       ]
@@ -120,10 +117,10 @@
       tags: "administracion conjunto consejo queja correo",
       nota: "Complete estos datos cuando tenga el teléfono y el WhatsApp definitivos.",
       filas: [
-        { etiqueta: "Correo", valor: cfg.administracion?.email || "POR CONFIRMAR", tel: null },
-        { etiqueta: "Teléfono", valor: cfg.administracion?.telefono || "POR CONFIRMAR", tel: null },
-        { etiqueta: "WhatsApp", valor: cfg.administracion?.whatsapp || "POR CONFIRMAR", tel: null },
-        { etiqueta: "Horario", valor: cfg.administracion?.horario || "POR CONFIRMAR", tel: null }
+        { etiqueta: "Correo", valor: cfg.administracion?.email || "reservadesubaque@outlook.com", tel: null },
+        { etiqueta: "Teléfono", valor: cfg.administracion?.telefono || "3194090958", tel: cfg.administracion?.telefono || "3194090958" },
+        { etiqueta: "WhatsApp", valor: cfg.administracion?.whatsapp || "3194090958", tel: cfg.administracion?.whatsapp || "3194090958" },
+        { etiqueta: "Horarios de atención presencial o por teléfono", valor: cfg.administracion?.horario || "Lunes a viernes, 8:00 a.m. a 5:00 p.m.", tel: null }
       ]
     },
     {
@@ -134,8 +131,7 @@
       tags: "porteria vigilancia ingreso visita paquete",
       nota: "Ante riña o hurto en portería, avise a vigilancia y marque 123.",
       filas: [
-        { etiqueta: "Portería principal", valor: cfg.porteria?.principal || "POR CONFIRMAR", tel: null },
-        { etiqueta: "Portería vehicular", valor: cfg.porteria?.vehicular || "POR CONFIRMAR", tel: null },
+        { etiqueta: "Portería principal", valor: cfg.porteria?.principal || "3123116210", tel: cfg.porteria?.principal || "3123116210" },
         { etiqueta: "Horario", valor: cfg.porteria?.horario || "24 horas", tel: null }
       ]
     }
@@ -197,15 +193,14 @@
       <h3>Administración</h3>
       <p>${cfg.administracion?.nombre || ""}</p>
       <p>${cfg.administracion?.horario || ""}</p>
-      <p>Correo: ${cfg.administracion?.email || "POR CONFIRMAR"}</p>
-      <p>Teléfono: ${cfg.administracion?.telefono || "POR CONFIRMAR"}</p>
+      <p>Correo: ${cfg.administracion?.email || "reservadesubaque@outlook.com"}</p>
+      <p>Teléfono: ${cfg.administracion?.telefono || "3194090958"}</p>
     </article>
     <article class="card">
       <h3>Portería</h3>
       <p>Horario: ${cfg.porteria?.horario || "24 horas"}</p>
-      <p>Principal: ${cfg.porteria?.principal || "POR CONFIRMAR"}</p>
-      <p>Vehicular: ${cfg.porteria?.vehicular || "POR CONFIRMAR"}</p>
-      <p>Dirección del conjunto: ${cfg.direccion || "POR CONFIRMAR"}</p>
+      <p>Principal: ${cfg.porteria?.principal || "3123116210"}</p>
+      <p>Dirección del conjunto: ${cfg.direccion || "Carrera 145 #150-64 · Localidad de Suba"}</p>
     </article>`;
 
   const url = cfg.manualConvivenciaUrl || "#manual";
