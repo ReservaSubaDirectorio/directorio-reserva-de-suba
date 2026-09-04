@@ -1,23 +1,25 @@
-/* Datos del conjunto — complete lo marcado POR CONFIRMAR */
+/* Datos del conjunto */
 window.RDS_CONFIG = {
   nombre: "Reserva de Suba",
   slogan: "parque residencial",
   ciudad: "Localidad de Suba · Bogotá D.C.",
-  direccion: "POR CONFIRMAR",
-  manualConvivenciaUrl: "https://drive.google.com/file/d/1QlPXDbUoxC2QC2OMv0yngdZpGsMS1_1W/view?usp=sharing",
+  direccion: "Carrera 145 #150-64 · Localidad de Suba",
+  manualConvivenciaUrl: "#manual",
+  quejasUrl: "https://quejas-reserva-de-suba.reservadesubaque.workers.dev",
+  boletinUrl: "https://heyzine.com/flip-book/1ec691d6f2.html",
 
   administracion: {
     nombre: "Administración Reserva de Suba",
     horario: "Lunes a viernes, 8:00 a.m. a 5:00 p.m.",
-    telefono: "POR CONFIRMAR",
-    whatsapp: "POR CONFIRMAR",
-    email: "reservadesubabol@outlook.com",
+    telefono: "3194090958",
+    whatsapp: "3194090958",
+    email: "reservadesubaque@outlook.com",
     consejo: "POR CONFIRMAR"
   },
 
   porteria: {
-    principal: "POR CONFIRMAR",
-    vehicular: "POR CONFIRMAR",
+    principal: "3123116210",
     horario: "24 horas"
   }
 };
+
