@@ -87,7 +87,7 @@
       titulo: "Protección animal",
       resumen: "Maltrato, abandono o animal herido",
       tags: "animal mascota perro gato maltrato idpyba",
-      nota: "Si el animal está en riesgo vital o el maltrato es en este momento, 123. La línea del IDPYBA es para reportar y hacer seguimiento.",
+      nota: "Si el animal está en riesgo vital o el maltrato es en este momento, 123. El correo del IDPYBA es para reportar y hacer seguimiento.",
       filas: [
         { etiqueta: "Flagrancia o urgencia vital", valor: "123", tel: "123" },
         { etiqueta: "Correo IDPYBA", valor: "proteccionanimal@animalesbog.gov.co", tel: null }
@@ -198,7 +198,7 @@
     <article class="card">
       <h3>Portería</h3>
       <p>Horario: ${cfg.porteria?.horario || "24 horas"}</p>
-      <p>Principal: ${cfg.porteria?.principal || "3123116210"}</p>
+      <p>Principal: ${cfg.porteria?.telefono || "3123116210"}</p>
       <p>Dirección del conjunto: ${cfg.direccion || "Carrera 145 #150-64 · Localidad de Suba"}</p>
     </article>`;
 
