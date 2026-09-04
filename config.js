@@ -4,7 +4,7 @@ window.RDS_CONFIG = {
   slogan: "parque residencial",
   ciudad: "Localidad de Suba · Bogotá D.C.",
   direccion: "Carrera 145 #150-64 · Localidad de Suba",
-  manualConvivenciaUrl: "#manual",
+  manualConvivenciaUrl: "https://drive.google.com/file/d/1QlPXDbUoxC2QC2OMv0yngdZpGsMS1_1W/view?usp=sharing",
   quejasUrl: "https://quejas-reserva-de-suba.reservadesubaque.workers.dev",
   boletinUrl: "https://heyzine.com/flip-book/1ec691d6f2.html",
 
@@ -22,4 +22,3 @@ window.RDS_CONFIG = {
     horario: "24 horas"
   }
 };
-
