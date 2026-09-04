@@ -18,7 +18,7 @@ window.RDS_CONFIG = {
   },
 
   porteria: {
-    telefono: "3123116210",
+    principal: "3123116210",
     horario: "24 horas"
   }
 };
