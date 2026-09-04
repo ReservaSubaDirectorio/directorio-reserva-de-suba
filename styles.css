@@ -47,7 +47,7 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--wine-deep); }
   font-weight: 600; font-size: 14px; border: 1px solid transparent;
 }
 .btn-sos { background: var(--wine); color: #fff; }
-.btn-quejas { background: var(--wine-deep); color: #fff; }
+.btn-quejas { background: #c45b6e; color: #fff; }
 .btn-boletin { background: #8a5a3c; color: #fff; }
 .btn-ghost { background: #fff; color: var(--wine); border-color: var(--line); }
 .btn-light { background: #fff; color: var(--wine-deep); }
