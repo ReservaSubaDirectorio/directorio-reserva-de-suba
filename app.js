@@ -111,7 +111,7 @@
       id: "servicios",
       ico: "💡",
       titulo: "Servicios públicos",
-      resumen: "Luz, agua, gas y daños en redes",
+      resumen: "Luz, agua, gas y Emergencias en redes",
       tags: "luz agua gas enel acueducto vanti energia fuga",
       nota: "Fuga de gas: no encienda luces, abra ventanas, salga y marque Bomberos / 123 y la línea del gas.",
       filas: [
