@@ -33,7 +33,7 @@
       titulo: "Emergencias Bogotá",
       resumen: "Policía, Bomberos y ambulancia",
       tags: "123 emergencia hurto riña incendio accidente",
-      nota: "Desde cualquier celular. Diga el nombre del conjunto, la torre y el apartamento.",
+      nota: "Desde cualquier celular. Diga el nombre del conjunto, la torre o el apartamento, si es necesario.",
       filas: [
         { etiqueta: "Línea única de emergencias", valor: "123", tel: "123" },
         { etiqueta: "Policía (línea directa)", valor: "112", tel: "112" },
