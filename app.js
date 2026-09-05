@@ -8,7 +8,7 @@
       titulo: "Administración del conjunto",
       resumen: "PQRS",
       tags: "administracion conjunto consejo queja correo telefono whatsapp",
-      nota: "Atención presencial o por teléfono en el horario indicado.",
+      nota: "Atención presencial o por teléfono en el horario indicado. Según la Ley 1755 de 2015, la administración tiene entre 10 y 15 días hábiles para responder una PQRS, extendiéndose hasta 30 días para consultas complejas.",
       filas: [
         { etiqueta: "Correo", valor: cfg.administracion?.email || "reservadesubaque@outlook.com", tel: null },
         { etiqueta: "Teléfono y WhatsApp", valor: cfg.administracion?.telefono || "3194090958", tel: cfg.administracion?.telefono || "3194090958" },
