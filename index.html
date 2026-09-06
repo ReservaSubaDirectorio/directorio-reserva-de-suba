@@ -4,85 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Directorio · Reserva de Suba</title>
+  <meta name="description" content="Directorio del conjunto Reserva de Suba: emergencias, portería, administración y autoridades de Suba, Bogotá." />
   <link rel="icon" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,460;0,9..144,560;1,9..144,460;1,9..144,560&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#directorio">Ir al directorio</a>
+
   <header class="top">
     <div class="wrap top-inner">
       <a class="brand" href="#inicio">
-        <img src="logo.png" alt="Reserva de Suba parque residencial" />
+        <img src="logo.png" alt="Reserva de Suba, parque residencial" />
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Principal">
         <a href="#directorio">Directorio</a>
         <a href="#conjunto">El conjunto</a>
         <a class="nav-manual" href="#manual">Manual de convivencia</a>
       </nav>
+      <a class="top-sos" href="tel:123">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="top-sos-label">Línea 123</span>
+      </a>
     </div>
   </header>
 
   <section class="hero" id="inicio">
+    <div class="hero-bars" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
     <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow">Directorio del conjunto</p>
-        <h1>Reserva de Suba</h1>
-        <p class="lead">Teléfonos de emergencia, autoridades de Bogotá, localidad de Suba y contactos internos. Toque una tarjeta para ver números, horarios, información general y recomendaciones. Incluye botones de emergencia, acceso al Manual de convivencia, al boletín mensual y al Portal de quejas.</p>
-        <div class="hero-actions">
-          <a class="btn btn-sos" href="tel:123">Emergencia 123</a>
-          <a class="btn btn-ghost" href="#manual">Manual de convivencia</a>
-          <a class="btn btn-quejas" href="https://quejas-reserva-de-suba.reservadesubaque.workers.dev" target="_blank" rel="noopener">Portal de quejas</a>
-          <a class="btn btn-boletin" href="https://heyzine.com/flip-book/1ec691d6f2.html" target="_blank" rel="noopener">Boletín mensual</a>
+      <div class="hero-copy">
+        <p class="kicker">Directorio del conjunto</p>
+        <h1>Reserva<br />de Suba</h1>
+        <p class="lead">Teléfonos de emergencia, autoridades de Bogotá, de la localidad de Suba y contactos internos, en un solo lugar. Toque una tarjeta para ver números, horarios y recomendaciones.</p>
+        <div class="quick-tiles">
+          <a class="tile tile-manual" href="#manual">
+            <span class="tile-label">Manual de<br />convivencia</span>
+            <span class="tile-go" aria-hidden="true">↗</span>
+          </a>
+          <a class="tile tile-quejas" href="https://quejas-reserva-de-suba.reservadesubaque.workers.dev" target="_blank" rel="noopener">
+            <span class="tile-label">Portal de<br />quejas</span>
+            <span class="tile-go" aria-hidden="true">↗</span>
+          </a>
+          <a class="tile tile-boletin" href="https://heyzine.com/flip-book/1ec691d6f2.html" target="_blank" rel="noopener">
+            <span class="tile-label">Boletín<br />mensual</span>
+            <span class="tile-go" aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
-      <aside class="hero-card">
-        <p class="kicker">En una emergencia</p>
-        <strong>Llame al 123</strong>
-        <p>Policía, bomberos, ambulancia, maltrato animal en flagrancia y violencia en curso. Diga: Reserva de Suba, localidad de Suba, dirección y la torre o el apartamento, si es necesario.</p>
+
+      <aside class="hero-card" aria-labelledby="sos-title">
+        <p class="hero-card-eyebrow">En una emergencia</p>
+        <a class="sos-number" href="tel:123">123</a>
+        <p id="sos-title" class="sos-caption">Policía, bomberos, ambulancia, maltrato animal en flagrancia y violencia en curso.</p>
+        <p class="sos-detail">Diga: Reserva de Suba, localidad de Suba, dirección y la torre o el apartamento, si es necesario.</p>
+        <a class="btn-call-now" href="tel:123">Llamar ahora</a>
       </aside>
     </div>
   </section>
 
   <section class="wrap search-wrap">
     <label class="search">
-      <span>Buscar en el directorio</span>
-      <input id="q" type="search" placeholder="Ej. gas, portería, animal, policía…" autocomplete="off" />
+      <svg class="search-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.2-3.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="sr-only">Buscar en el directorio</span>
+      <input id="q" type="search" placeholder="Buscar: gas, portería, animal, policía…" autocomplete="off" />
     </label>
   </section>
 
   <main class="wrap" id="directorio">
-    <p class="section-label">Directorio</p>
-    <h2>Servicios y contactos</h2>
-    <p class="hint">Los números de la ciudad de Bogota, de la localidad de Suba y del conjunto son oficiales.</p>
+    <div class="section-head">
+      <p class="kicker kicker-dark">Directorio</p>
+      <h2>Servicios y contactos</h2>
+      <p class="hint">Los números de Bogotá, de la localidad de Suba y del conjunto son oficiales.</p>
+    </div>
     <div id="list" class="list"></div>
   </main>
 
   <section class="wrap bloque" id="conjunto">
-    <p class="section-label">Uso interno</p>
-    <h2>Administración y portería</h2>
+    <div class="section-head">
+      <p class="kicker kicker-dark">Uso interno</p>
+      <h2>Administración y portería</h2>
+    </div>
     <div class="cards-2" id="interno"></div>
   </section>
 
   <section class="manual" id="manual">
+    <div class="manual-bars" aria-hidden="true"></div>
     <div class="wrap manual-inner">
       <div>
-        <p class="eyebrow light">Normas del conjunto</p>
+        <p class="kicker kicker-light">Normas del conjunto</p>
         <h2>Manual de convivencia</h2>
         <p>Reglamento de propiedad horizontal, horarios, mascotas, parqueaderos y uso de zonas comunes.</p>
       </div>
-      <a class="btn btn-light" id="manualBtn" href="#manual" target="_blank" rel="noopener">Abrir el manual</a>
+      <a class="btn-light" id="manualBtn" href="#manual" target="_blank" rel="noopener">Abrir el manual</a>
     </div>
   </section>
 
   <footer class="foot">
-    <div class="wrap">
-      <img src="logo.png" alt="" />
+    <div class="wrap foot-inner">
+      <img src="logo.png" alt="Reserva de Suba" />
       <p>Carrera 145 #150-64 · Localidad de Suba, Bogotá D.C.</p>
-      <p class="mini">Reserva de Suba © 2026 | Todos los derechos reservados.</p>
+      <p class="mini">Reserva de Suba © 2026 — Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <a class="fab-sos" href="tel:123" aria-label="Llamar a la línea de emergencias 123">
+    <span>123</span>
+  </a>
 
   <script src="config.js"></script>
   <script src="app.js"></script>
