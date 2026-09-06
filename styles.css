@@ -140,7 +140,8 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); font-weight: 500; color: var(--win
 .tile-label { font-size: 13px; font-weight: 600; line-height: 1.25; color: var(--ink); }
 .tile-go { align-self: flex-end; color: var(--wine-500); font-size: 15px; }
 .tile-manual { border-color: var(--wine-200); }
-.tile-quejas .tile-label { color: var(--wine-600); }
+.tile-quejas { background: var(--urgent-soft); border-color: var(--urgent); }
+.tile-quejas .tile-label { color: var(--urgent); font-weight: 700; }
 .tile-boletin { }
 
 .hero-card {
