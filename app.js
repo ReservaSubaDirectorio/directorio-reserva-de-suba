@@ -136,6 +136,10 @@
     }
   ];
 
+  // Categorías que reciben el tratamiento visual "urgente" (borde e íconos en tono rojo-vino).
+  // Es una anotación puramente visual: no cambia el orden, los datos ni la búsqueda.
+  const URGENTES = new Set(["emergencias", "policia", "bomberos", "salud", "mujer", "animales"]);
+
   const list = document.getElementById("list");
   const q = document.getElementById("q");
   const interno = document.getElementById("interno");
@@ -144,7 +148,7 @@
   function filasHTML(filas) {
     return `<ul class="rows">${filas.map((f) => {
       const right = f.tel
-        ? `<a class="btn btn-call" href="tel:${f.tel}">Llamar ${f.valor}</a>`
+        ? `<a class="btn-call" href="tel:${f.tel}">Llamar ${f.valor}</a>`
         : `<span>${f.valor}</span>`;
       return `<li><b>${f.etiqueta}</b>${right}</li>`;
     }).join("")}</ul>`;
@@ -155,11 +159,12 @@
     list.innerHTML = DIR.map((d) => {
       const blob = (d.titulo + " " + d.resumen + " " + d.tags).toLowerCase();
       const hide = t && !blob.includes(t);
-      return `<article class="item" data-id="${d.id}" ${hide ? "hidden" : ""}>
+      const urgente = URGENTES.has(d.id) ? " is-urgent" : "";
+      return `<article class="item${urgente}" data-id="${d.id}" ${hide ? "hidden" : ""}>
         <button class="item-btn" type="button" aria-expanded="false">
           <span class="ico">${d.ico}</span>
-          <span><strong>${d.titulo}</strong><small>${d.resumen}</small></span>
-          <span class="chev">▾</span>
+          <span><span class="item-title">${d.titulo}</span><span class="item-summary">${d.resumen}</span></span>
+          <span class="chev" aria-hidden="true">▾</span>
         </button>
         <div class="panel">
           <p class="note">${d.nota}</p>
@@ -211,3 +216,4 @@
     });
   }
 })();
+
